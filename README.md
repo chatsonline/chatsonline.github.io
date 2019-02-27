@@ -7,6 +7,7 @@
 
     <title>CHATS</title>
 
+    <link rel="shortcut Icon" href="unfinished send logo.png">
     <link rel="stylesheet" href="scroll.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300" rel="stylesheet">
@@ -17,7 +18,7 @@
       <div class="logo">CHATS</div>
     </header>
     <main>
-      <p class="signIn">SIGN IN TO CHATS</p>
+      <p class="signIn">SIGN INTO CHATS</p>
       <div id="firebaseui-auth-container"></div>
 
       <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase.js"></script>
