@@ -1,0 +1,254 @@
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  background-color: #eaeaea;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+header{
+
+}
+
+main{
+  font-size: 2vw;
+  width: 80%;
+  margin: auto;
+  background-color: #f7f7f7;
+  border-radius: 1vw;
+  padding-bottom: 1.5vw;
+  padding-right: .8vw;
+  padding-left: .8vw;
+  grid-gap: .8vw;
+}
+
+#secMessagesOutter{
+  overflow: auto;
+  height: 60vh;
+  display: grid;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  scroll-behavior: smooth;
+}
+
+#secMessages{
+  display: grid;
+  grid-gap: 1.3vw;
+  align-content: end;
+}
+
+#secMessages div{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 2vw;
+  max-width: 49%;
+}
+
+#secMessages div span{
+  padding: 0.75rem;
+  border-radius: 1.5vw;
+  max-width: 100%;
+}
+
+#secMessages div img{
+  height: 4vw;
+  border-radius: 50%;
+  margin-top: auto;
+}
+
+#inpMessages{
+  width: 100%;
+  background-color: #eaeaea;
+  color: white;
+  border-radius: 1.5vw;
+  border: none;
+  grid-column: 2;
+  font-size: 1.4vw;
+  padding: .1vw;
+  font-family: 'Roboto Condensed', sans-serif;
+  transition: .4s;
+  padding-left: 1vw;
+  padding-right: 1vw;
+}
+
+#inpMessages:hover, #inpMessages:focus{
+  background-color: limegreen;
+  transition: .8s;
+  outline-width: 0;
+}
+
+#form{
+  display: grid;
+  grid-template-columns: 4% 85% 6% 5%;
+}
+
+.messageSubmitBtn{
+  background: transparent;
+  background-image: url("sendBtn.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: none;
+}
+
+.messageSubmitBtn:focus{
+  outline-width: 0;
+}
+
+.messageApperance{
+  font-size: 1.4vw;
+}
+
+.me .displayName{
+  font-size: .8vw;
+  text-align: right;
+}
+
+.others .displayName{
+  font-size: .8vw;
+  text-align: left;
+}
+
+.others .textMessage{
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-row-start: 1;
+  grid-column-start: 2;
+}
+
+.me .textMessage{
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-row-start: 1;
+  grid-column-start: 1;
+}
+
+.signIn{
+  padding-top: 2vw;
+  text-align: center;
+  font-size: 1.8vw;
+}
+
+.logo{
+  font-size: 3vw;
+  text-align: center;
+  margin-bottom: 2vw;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.me{
+  margin-left: auto;
+}
+
+.me span {
+  background-color: limegreen;
+  color: white;
+  grid-row: 2;
+}
+
+.others{
+  margin-right: auto;
+}
+
+.others span{
+  background-color: #eee;
+  grid-row: 2;
+  grid-column: 1;
+}
+
+.forms{
+  display: grid;
+  grid-template: 1fr;
+}
+
+.forms input{
+  width: 100%;
+  padding: .5vw;
+  box-sizing: border-box;
+}
+
+.notloggedin{
+  text-align: center;
+}
+
+@media(max-width:1000px){
+  main{
+    width: 95%;
+    border-radius: 3vw;
+  }
+
+  #secMessagesOutter{
+    height: 67vh;
+  }
+
+  #secMessages{
+    grid-gap: 3vw;
+  }
+
+  #secMessages div {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 2vw;
+    max-width: 69%;
+  }
+
+  #secMessages div span{
+    padding: 0.50rem;
+    border-radius: 5vw;
+    max-width: 100%;
+  }
+
+  #secMessages div img{
+      height: 8vw;
+      border-radius: 50%;
+      margin-top: auto;
+  }
+
+  #form{
+    display: grid;
+    grid-template-columns: 5% 80% 10% 5%;
+  }
+
+  #inpMessages{
+    border-radius: 4vw;
+    padding-left: 3.3vw;
+    padding-right: 3.3vw;
+    line-height: 6.5vw;
+  }
+
+  input[type='text']:focus{
+    -webkit-text-size-adjust: 100%;
+  }
+
+  #inpMessages{
+    font-size: 4.5vw !important;
+  }
+
+  .messageApperance{
+    font-size: 4.5vw;
+  }
+
+  .me .displayName{
+    font-size: 2.34vw;
+  }
+
+  .others .displayName{
+    font-size: 2.34vw;
+  }
+
+  .logo{
+    font-size: 6vw;
+  }
+
+  .signIn{
+    padding-top: 4.5vw;
+    text-align: center;
+    font-size: 4vw;
+  }
+
+  ::-webkit-scrollbar{
+      width: 1vw;
+      border-radius: 1vw;
+  }
+}
